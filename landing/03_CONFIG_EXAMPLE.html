@@ -1,0 +1,15 @@
+<!-- Добавить до блока T123 только после согласования CRM адаптера и политики. -->
+<script>
+window.PozharnikHomeConfig = {
+  leadEndpoint: '',
+  policyUrl: '',
+  policyApproved: false,
+  gaMeasurementId: '',
+  responseTimeText: 'Мы свяжемся с вами в рабочее время и согласуем следующий шаг.',
+  priceRules: {
+    // Только утвержденные значения. Пустая модель показывает необходимость обследования.
+    // aps_maintenance: { byObject: { 'Производство': { minPerM2: ..., maxPerM2: ..., minimum: ... } } },
+    // aps_installation: { minPerM2: ..., maxPerM2: ..., minimum: ... }
+  }
+};
+</script>

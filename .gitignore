@@ -1,0 +1,13 @@
+# Local review inputs and temporary files
+source_*.html
+*_extract.txt
+photo_inventory.jpg
+revise_tz.py
+qa_tz/
+landing/qa-adapter-test.html
+landing/patch_analytics.py
+*.docx
+__pycache__/
+.env
+.env.*
+!.env.example
