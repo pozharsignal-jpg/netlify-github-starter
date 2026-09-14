@@ -1,0 +1,12 @@
+{
+  "name": "pozharnik-kz-landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:crm": "node --test tests/lead-contract.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.0.0"
+  }
+}
+
