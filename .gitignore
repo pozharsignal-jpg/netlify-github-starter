@@ -11,3 +11,13 @@ __pycache__/
 .env
 .env.*
 !.env.example
+.tools/
+deliverables/
+_add_site_tree_note.py
+_extract_briefs.py
+_render_tz.py
+_revise_tz.py
+Pozharnik_*.zip
+landing/media/*.mp4
+landing/media/attestat-akkreditacii-kz45vvb00001273.jpg
+landing/media/licenziya-23028116.jpg

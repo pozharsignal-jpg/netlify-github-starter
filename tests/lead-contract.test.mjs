@@ -50,4 +50,3 @@ test("same event_id is idempotent", async () => {
 test("invalid lead is rejected before CRM", () => {
   assert.deepEqual(validateLead({}), { name: "Укажите имя", phone: "Укажите номер в формате +7XXXXXXXXXX", consent: "Нужно согласие на обработку данных", service: "Выберите услугу", event_id: "Не найден идентификатор заявки" });
 });
-
