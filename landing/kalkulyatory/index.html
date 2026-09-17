@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Калькуляторы пожарной безопасности в Алматы | Pozharnik.kz</title>
+  <meta name="description" content="Выберите калькулятор обслуживания или монтажа АПС, пожарного аудита, огнетушителей и планов эвакуации. Предварительный расчет для объектов Алматы и области">
+  <link rel="canonical" href="https://pozharnik.kz/kalkulyatory/">
+</head>
+<body style="margin:0">
+<div id="pz-kalkulyatory-page">
+<style>
+#pz-kalkulyatory-page{--ink:#15212b;--muted:#697984;--red:#e54132;--red-hover:#bd2f25;--blue:#14364b;--navy:#112d3d;--teal:#1e596b;--soft:#f5f7f6;--white:#fff;--line:#dfe6e8;--accent:#ffc7bd;--green:#177653;color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;background:#fff}
+#pz-kalkulyatory-page *{box-sizing:border-box}
+#pz-kalkulyatory-page a{color:inherit;text-decoration:none}
+#pz-kalkulyatory-page button,#pz-kalkulyatory-page input,#pz-kalkulyatory-page select,#pz-kalkulyatory-page textarea{font:inherit}
+#pz-kalkulyatory-page button,#pz-kalkulyatory-page a{touch-action:manipulation}
+#pz-kalkulyatory-page .pz-wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+#pz-kalkulyatory-page .pz-header-space{height:88px}
+#pz-kalkulyatory-page .pz-section{padding:84px 0}
+#pz-kalkulyatory-page .pz-soft{background:var(--soft)}
+#pz-kalkulyatory-page h1,#pz-kalkulyatory-page h2,#pz-kalkulyatory-page h3{margin:0;line-height:1.1;letter-spacing:-.025em}
+#pz-kalkulyatory-page h1{font-size:clamp(36px,5vw,47px);max-width:720px}
+#pz-kalkulyatory-page h2{font-size:clamp(28px,4vw,34px)}
+#pz-kalkulyatory-page h3{font-size:21px}
+#pz-kalkulyatory-page p{margin:0}
+#pz-kalkulyatory-page .pz-eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;color:#fff;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.09em}
+#pz-kalkulyatory-page .pz-eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+#pz-kalkulyatory-page .pz-section-head{max-width:780px;margin-bottom:34px}
+#pz-kalkulyatory-page .pz-section-head p{margin-top:12px;color:var(--muted);font-size:18px}
+#pz-kalkulyatory-page .pz-btn{min-height:50px;padding:13px 20px;border:0;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;cursor:pointer;transition:transform .16s ease,background .16s ease,border-color .16s ease}
+#pz-kalkulyatory-page .pz-btn:hover{transform:translateY(-2px)}
+#pz-kalkulyatory-page .pz-btn-primary{background:var(--red);color:#fff;box-shadow:0 10px 25px rgba(229,65,50,.24)}
+#pz-kalkulyatory-page .pz-btn-primary:hover{background:var(--red-hover)}
+#pz-kalkulyatory-page .pz-btn-secondary{background:#fff;color:var(--ink);border:1px solid #cfd9dc}
+#pz-kalkulyatory-page .pz-btn-secondary:hover{border-color:var(--red);color:var(--red)}
+#pz-kalkulyatory-page .pz-hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#112d3d 0%,#184b5d 55%,#1e596b 100%);color:#fff;padding:78px 0 72px}
+#pz-kalkulyatory-page .pz-hero:after{content:"";position:absolute;right:-150px;top:-210px;width:610px;height:610px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 52px rgba(255,255,255,.025),0 0 0 104px rgba(255,255,255,.02)}
+#pz-kalkulyatory-page .pz-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+#pz-kalkulyatory-page .pz-hero-copy{color:#e4eef1;font-size:19px;max-width:700px;margin:19px 0 24px}
+#pz-kalkulyatory-page .pz-actions{display:flex;gap:11px;flex-wrap:wrap}
+#pz-kalkulyatory-page .pz-chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}
+#pz-kalkulyatory-page .pz-chip{padding:7px 11px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.08);font-size:13px;font-weight:700}
+#pz-kalkulyatory-page .pz-hero-panel{display:none}
+#pz-kalkulyatory-page .pz-hero-panel small{display:block;color:var(--muted);font-weight:700}
+#pz-kalkulyatory-page .pz-formula{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center;margin:20px 0}
+#pz-kalkulyatory-page .pz-formula span{min-height:78px;padding:12px 8px;display:grid;place-items:center;text-align:center;border:1px solid var(--line);border-radius:12px;background:var(--soft);font-size:13px;font-weight:800}
+#pz-kalkulyatory-page .pz-formula b{color:var(--red);font-size:22px}
+#pz-kalkulyatory-page .pz-hero-panel p{color:var(--muted);font-size:14px}
+#pz-kalkulyatory-page .pz-filterbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}
+#pz-kalkulyatory-page .pz-filter{min-height:44px;border:1px solid var(--line);border-radius:999px;background:#fff;padding:9px 15px;color:var(--ink);font-weight:800;cursor:pointer}
+#pz-kalkulyatory-page .pz-filter[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+#pz-kalkulyatory-page .pz-calcs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#pz-kalkulyatory-page .pz-card{position:relative;display:flex;flex-direction:column;min-height:100%;padding:27px 25px;border:1px solid var(--line);border-radius:13px;background:#fff;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+#pz-kalkulyatory-page .pz-card:hover{transform:translateY(-3px);border-color:#bfd0d6;box-shadow:0 14px 35px rgba(20,54,75,.09)}
+#pz-kalkulyatory-page .pz-card[hidden]{display:none}
+#pz-kalkulyatory-page .pz-card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:18px}
+#pz-kalkulyatory-page .pz-icon{width:46px;height:46px;border-radius:12px;background:#e8f0f3;color:var(--blue);display:grid;place-items:center;font-size:23px;font-weight:900}
+#pz-kalkulyatory-page .pz-status{padding:5px 8px;border-radius:999px;background:#eaf7f1;color:var(--green);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+#pz-kalkulyatory-page .pz-status-soon{background:#fff0ed;color:#a9362c}
+#pz-kalkulyatory-page .pz-card p{color:var(--muted);font-size:14px;margin:10px 0 16px}
+#pz-kalkulyatory-page .pz-meta{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:8px;color:#40515d;font-size:13px}
+#pz-kalkulyatory-page .pz-card-params-title{margin:0 0 8px;color:var(--ink);font-size:12px;font-weight:800}
+#pz-kalkulyatory-page .pz-meta li{display:flex;gap:8px}
+#pz-kalkulyatory-page .pz-meta li:before{content:"✓";color:var(--green);font-weight:900}
+#pz-kalkulyatory-page .pz-card .pz-btn{width:100%;margin-top:auto}
+#pz-kalkulyatory-page .pz-card-result{margin:0 0 14px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+#pz-kalkulyatory-page .pz-card-result strong{display:block;color:var(--ink);font-size:14px}
+#pz-kalkulyatory-page .pz-card-time{display:block;margin-top:5px;color:#40515d;font-weight:700}
+#pz-kalkulyatory-page .pz-empty{display:none;padding:22px;border:1px dashed #b8c8ce;border-radius:13px;color:var(--muted)}
+#pz-kalkulyatory-page .pz-empty.show{display:block}
+#pz-kalkulyatory-page .pz-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#pz-kalkulyatory-page .pz-step{padding:26px;border:1px solid var(--line);border-radius:13px;background:#fff}
+#pz-kalkulyatory-page .pz-step b{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#fff0ed;color:var(--red);margin-bottom:17px}
+#pz-kalkulyatory-page .pz-step p{margin-top:8px;color:var(--muted)}
+#pz-kalkulyatory-page .pz-compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+#pz-kalkulyatory-page .pz-compare article{padding:28px;border:1px solid var(--line);border-radius:18px;background:#fff}
+#pz-kalkulyatory-page .pz-compare article:last-child{background:var(--blue);color:#fff;border-color:var(--blue)}
+#pz-kalkulyatory-page .pz-compare p{margin-top:10px;color:var(--muted)}
+#pz-kalkulyatory-page .pz-compare article:last-child p{color:#d8e6eb}
+#pz-kalkulyatory-page .pz-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#pz-kalkulyatory-page .pz-proof article{padding:24px;border:1px solid var(--line);border-radius:13px;background:#fff}
+#pz-kalkulyatory-page .pz-proof p{margin-top:8px;color:var(--muted);font-size:14px}
+#pz-kalkulyatory-page .pz-proof a{display:inline-flex;margin-top:14px;color:var(--red);font-weight:800;font-size:13px}
+#pz-kalkulyatory-page .pz-faq{display:grid;gap:10px}
+#pz-kalkulyatory-page .pz-faq details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:0 18px}
+#pz-kalkulyatory-page .pz-faq summary{cursor:pointer;font-weight:800;padding:17px 0}
+#pz-kalkulyatory-page .pz-faq p{padding:0 0 17px;color:var(--muted)}
+#pz-kalkulyatory-page .pz-final{background:var(--navy);color:#fff}
+#pz-kalkulyatory-page .pz-final-grid{display:grid;grid-template-columns:1fr .82fr;gap:42px;align-items:center}
+#pz-kalkulyatory-page .pz-final-copy p{margin-top:15px;color:#d3e0e5;font-size:18px}
+#pz-kalkulyatory-page .pz-form{padding:26px;border-radius:18px;background:#fff;color:var(--ink)}
+#pz-kalkulyatory-page .pz-fields{display:grid;gap:12px}
+#pz-kalkulyatory-page .pz-field{display:grid;gap:5px}
+#pz-kalkulyatory-page .pz-field label{font-size:13px;font-weight:800}
+#pz-kalkulyatory-page .pz-field input,#pz-kalkulyatory-page .pz-field select,#pz-kalkulyatory-page .pz-field textarea{width:100%;min-height:48px;padding:11px 12px;border:1px solid #cfd9dc;border-radius:7px;color:var(--ink);background:#fff}
+#pz-kalkulyatory-page .pz-field textarea{min-height:82px;resize:vertical}
+#pz-kalkulyatory-page .pz-consent{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:11px}
+#pz-kalkulyatory-page .pz-consent input{margin-top:3px}
+#pz-kalkulyatory-page .pz-message{display:none;padding:11px 13px;border-radius:8px;font-size:13px}
+#pz-kalkulyatory-page .pz-message.show{display:block}
+#pz-kalkulyatory-page .pz-success{background:#eaf7f1;color:#12613f}
+#pz-kalkulyatory-page .pz-error{background:#fff0ed;color:#8f2e26}
+#pz-kalkulyatory-page .pz-footer{padding:32px 0;background:#f3f6f7;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+#pz-kalkulyatory-page .pz-footer-row{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+#pz-kalkulyatory-page .pz-footer a{font-weight:700;color:var(--ink)}
+#pz-kalkulyatory-page .pz-mobile-cta{display:none}
+#pz-kalkulyatory-page .pz-modal{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(7,20,29,.76)}
+#pz-kalkulyatory-page .pz-modal.open{display:flex}
+#pz-kalkulyatory-page .pz-modal-box{position:relative;width:min(540px,100%);max-height:calc(100vh - 36px);overflow:auto;padding:26px;border-radius:18px;background:#fff}
+#pz-kalkulyatory-page .pz-close{position:absolute;right:12px;top:12px;width:42px;height:42px;border:0;border-radius:10px;background:#edf2f3;font-size:23px;cursor:pointer}
+#pz-kalkulyatory-page :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:820px){#pz-kalkulyatory-page .pz-hero-grid,#pz-kalkulyatory-page .pz-final-grid{grid-template-columns:1fr}#pz-kalkulyatory-page .pz-hero-panel{max-width:650px}#pz-kalkulyatory-page .pz-calcs{grid-template-columns:repeat(2,1fr)}#pz-kalkulyatory-page .pz-proof{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){#pz-kalkulyatory-page{padding-bottom:74px}#pz-kalkulyatory-page .pz-wrap{width:min(100% - 28px,1160px)}#pz-kalkulyatory-page .pz-header-space{height:64px}#pz-kalkulyatory-page .pz-section{padding:60px 0}#pz-kalkulyatory-page h1{font-size:32px}#pz-kalkulyatory-page h2{font-size:28px}#pz-kalkulyatory-page .pz-hero{padding:54px 0 58px}#pz-kalkulyatory-page .pz-actions{display:grid}#pz-kalkulyatory-page .pz-actions .pz-btn{width:100%}#pz-kalkulyatory-page .pz-formula{grid-template-columns:1fr;gap:6px}#pz-kalkulyatory-page .pz-formula b{transform:rotate(90deg)}#pz-kalkulyatory-page .pz-calcs,#pz-kalkulyatory-page .pz-steps,#pz-kalkulyatory-page .pz-compare,#pz-kalkulyatory-page .pz-proof{grid-template-columns:1fr}#pz-kalkulyatory-page .pz-filterbar{display:grid;grid-template-columns:1fr 1fr}#pz-kalkulyatory-page .pz-filter:last-child{grid-column:1/-1}#pz-kalkulyatory-page .pz-mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:99990;display:grid;grid-template-columns:.85fr 1.15fr;gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);border-top:1px solid var(--line);box-shadow:0 -8px 22px rgba(14,35,47,.12)}#pz-kalkulyatory-page .pz-mobile-cta .pz-btn{min-height:48px;padding:10px 9px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){#pz-kalkulyatory-page *,#pz-kalkulyatory-page *:before,#pz-kalkulyatory-page *:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+
+<div class="pz-header-space" aria-hidden="true"></div>
+<main>
+  <section class="pz-hero" aria-labelledby="pz-main-title">
+    <div class="pz-wrap pz-hero-grid">
+      <div>
+        <span class="pz-eyebrow">Алматы и Алматинская область</span>
+        <h1 id="pz-main-title">Калькуляторы пожарной безопасности</h1>
+        <p class="pz-hero-copy">Выберите задачу и получите предварительный расчет по параметрам объекта. Диапазон показывается до запроса телефона; точный расчет формируется после уточнения данных.</p>
+        <div class="pz-actions">
+          <a class="pz-btn pz-btn-primary" href="#calculators">Выбрать калькулятор ↓</a>
+          <button class="pz-btn pz-btn-secondary" type="button" data-open-help>Нужна помощь с выбором</button>
+        </div>
+<div class="pz-chips" aria-label="Преимущества"><span class="pz-chip">3–4 шага</span><span class="pz-chip">Предварительный диапазон сразу</span><span class="pz-chip">Данные для точного расчета</span></div>
+      </div>
+      <aside class="pz-hero-panel" aria-label="Как устроен расчет">
+        <small>Логика предварительной оценки</small>
+        <div class="pz-formula" aria-hidden="true"><span>Задача</span><b>→</b><span>Параметры объекта</span><b>→</b><span>Диапазон</span></div>
+        <p>Автоматическая вилка помогает сориентироваться. Смета или коммерческое предложение готовятся по данным конкретного объекта.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="pz-section" id="calculators" aria-labelledby="pz-calc-title">
+    <div class="pz-wrap">
+      <div class="pz-section-head"><h2 id="pz-calc-title">Выберите, что нужно рассчитать</h2><p>Отфильтруйте задачи по ситуации или посмотрите все доступные сценарии.</p></div>
+      <div class="pz-filterbar" role="group" aria-label="Фильтр калькуляторов">
+        <button class="pz-filter" type="button" data-filter="all" aria-pressed="true">Все калькуляторы</button>
+        <button class="pz-filter" type="button" data-filter="new" aria-pressed="false">Новая система</button>
+        <button class="pz-filter" type="button" data-filter="existing" aria-pressed="false">Действующая система</button>
+        <button class="pz-filter" type="button" data-filter="single" aria-pressed="false">Отдельная услуга</button>
+        <button class="pz-filter" type="button" data-open-help aria-pressed="false">Не знаю, что выбрать</button>
+      </div>
+      <div class="pz-calcs" aria-live="polite">
+        <article class="pz-card" data-category="existing" data-calc="obsluzhivanie">
+          <div class="pz-card-top"><span class="pz-icon" aria-hidden="true">01</span><span class="pz-status">Доступен</span></div>
+          <h3><a href="/kalkulyatory/obsluzhivanie/" data-card-link>Обслуживание пожарной сигнализации</a></h3>
+          <p>Для действующей АПС, которой нужен регулярный регламент, понятный тариф и обследование состояния.</p>
+          <ul class="pz-meta"><li>Тип и площадь объекта</li><li>Состав и состояние систем</li><li>Желаемый график обслуживания</li></ul>
+          <div class="pz-card-result"><strong>Результат</strong>Предварительный диапазон тарифа<span class="pz-card-time">Ориентировочно: 1–2 минуты</span></div>
+          <a class="pz-btn pz-btn-primary" href="/kalkulyatory/obsluzhivanie/" data-card-link>Рассчитать тариф</a>
+        </article>
+        <article class="pz-card" data-category="new" data-calc="montazh">
+          <div class="pz-card-top"><span class="pz-icon" aria-hidden="true">02</span><span class="pz-status">Доступен</span></div>
+          <h3><a href="/kalkulyatory/montazh/" data-card-link>Монтаж пожарной сигнализации</a></h3>
+          <p>Для нового объекта, реконструкции или замены системы, когда нужна предварительная стоимость монтажа.</p>
+          <ul class="pz-meta"><li>Назначение и площадь</li><li>Этажность и наличие проекта</li><li>Сроки запуска объекта</li></ul>
+          <div class="pz-card-result"><strong>Результат</strong>Предварительная стоимость работ<span class="pz-card-time">Ориентировочно: 1–2 минуты</span></div>
+          <a class="pz-btn pz-btn-primary" href="/kalkulyatory/montazh/" data-card-link>Рассчитать стоимость</a>
+        </article>
+        <article class="pz-card" data-category="existing" data-calc="audit">
+          <div class="pz-card-top"><span class="pz-icon" aria-hidden="true">03</span><span class="pz-status">Доступен</span></div>
+          <h3><a href="/kalkulyatory/audit/" data-card-link>Пожарный аудит объекта</a></h3>
+          <p>Для подготовки к проверке, оценки известных нарушений или системной проверки объекта.</p>
+          <ul class="pz-meta"><li>Тип и площадь объекта</li><li>Дата проверки</li><li>Известные нарушения</li></ul>
+          <div class="pz-card-result"><strong>Результат</strong>Подходящий формат аудита и запись<span class="pz-card-time">Ориентировочно: 1–2 минуты</span></div>
+          <a class="pz-btn pz-btn-primary" href="/kalkulyatory/audit/" data-card-link>Оценить задачу</a>
+        </article>
+        <article class="pz-card" data-category="single" data-calc="ognetushiteli">
+          <div class="pz-card-top"><span class="pz-icon" aria-hidden="true">04</span><span class="pz-status">Доступен</span></div>
+          <h3><a href="/kalkulyatory/ognetushiteli/" data-card-link>Перезарядка огнетушителей</a></h3>
+          <p>Для расчета обслуживания партии огнетушителей с учетом типов, количества и доставки.</p>
+          <ul class="pz-meta"><li>Типы и количество</li><li>Дата последней перезарядки</li><li>Необходимость доставки</li></ul>
+          <div class="pz-card-result"><strong>Результат</strong>Предварительная стоимость обслуживания партии<span class="pz-card-time">Ориентировочно: 1–2 минуты</span></div>
+          <a class="pz-btn pz-btn-primary" href="/kalkulyatory/ognetushiteli/" data-card-link>Быстрый расчет</a>
+        </article>
+        <article class="pz-card" data-category="single" data-calc="plany-evakuacii">
+          <div class="pz-card-top"><span class="pz-icon" aria-hidden="true">05</span><span class="pz-status">Доступен</span></div>
+          <h3><a href="/kalkulyatory/plany-evakuacii/" data-card-link>Планы эвакуации</a></h3>
+          <p>Для изготовления планов с учетом этажности, количества схем, исходных материалов и формата.</p>
+          <ul class="pz-meta"><li>Количество этажей и планов</li><li>Наличие исходников</li><li>Материал и доставка</li></ul>
+          <div class="pz-card-result"><strong>Результат</strong>Предварительная стоимость изготовления<span class="pz-card-time">Ориентировочно: 1–2 минуты</span></div>
+          <a class="pz-btn pz-btn-primary" href="/kalkulyatory/plany-evakuacii/" data-card-link>Рассчитать изготовление</a>
+        </article>
+      </div>
+      <div class="pz-empty" id="pzEmpty">По выбранному фильтру пока нет калькуляторов. Покажите все варианты или оставьте задачу инженеру.</div>
+    </div>
+  </section>
+
+  <section class="pz-section pz-soft" aria-labelledby="pz-how-title"><div class="pz-wrap"><div class="pz-section-head"><h2 id="pz-how-title">Как работает расчет</h2><p>Короткий путь от задачи до понятного следующего шага.</p></div><div class="pz-steps"><article class="pz-step"><b>1</b><h3>Выберите задачу</h3><p>Откройте калькулятор, который соответствует системе или отдельной услуге.</p></article><article class="pz-step"><b>2</b><h3>Укажите параметры</h3><p>Ответьте на 3–4 вопроса об объекте, площади и состоянии системы.</p></article><article class="pz-step"><b>3</b><h3>Получите диапазон</h3><p>Посмотрите предварительную вилку и запросите персональный расчет или аудит.</p></article></div></div></section>
+
+  <section class="pz-section" aria-labelledby="pz-result-title"><div class="pz-wrap"><div class="pz-section-head"><h2 id="pz-result-title">Предварительный и персональный расчет — не одно и то же</h2></div><div class="pz-compare"><article><h3>Предварительный диапазон</h3><p>Автоматическая оценка по нескольким параметрам. Помогает понять порядок стоимости, но не является сметой, счетом или коммерческим предложением.</p></article><article><h3>Персональный расчет</h3><p>Готовится по данным конкретного объекта. Инженер уточняет состав системы, условия работ и при необходимости согласует обследование.</p></article></div></div></section>
+
+  <section class="pz-section pz-soft" aria-labelledby="pz-proof-title"><div class="pz-wrap"><div class="pz-section-head"><h2 id="pz-proof-title">Основание для точного расчета</h2><p>Стоимость подтверждается исходными данными, инженерной проверкой и документами.</p></div><div class="pz-proof"><article><h3>Параметры объекта</h3><p>Назначение, площадь, этажность, состояние системы и фактический объем оборудования.</p></article><article><h3>Инженерное уточнение</h3><p>Если исходных данных недостаточно, специалист задает вопросы или предлагает обследование.</p></article><article><h3>Документированный результат</h3><p>Для согласованного объема формируется расчет, смета или коммерческое предложение.</p><a href="/o-kompanii/">О компании →</a></article></div></div></section>
+
+  <section class="pz-section" aria-labelledby="pz-faq-title"><div class="pz-wrap"><div class="pz-section-head"><h2 id="pz-faq-title">Частые вопросы</h2></div><div class="pz-faq"><details><summary>Насколько точен предварительный расчет?</summary><p>Он показывает ориентировочный диапазон по введенным параметрам. Точность зависит от полноты исходных данных и состояния объекта.</p></details><details><summary>Почему итоговая цена может отличаться?</summary><p>На нее влияют состав оборудования, доступ к зонам работ, состояние действующей системы, проект и согласованные сроки.</p></details><details><summary>Нужно ли оставлять телефон, чтобы увидеть диапазон?</summary><p>Нет. В опубликованных калькуляторах предварительная вилка показывается до запроса телефона. Контакт нужен для персонального расчета или КП.</p></details><details><summary>Какие данные понадобятся?</summary><p>Обычно — тип и площадь объекта, состояние системы или наличие проекта. Для огнетушителей и планов эвакуации набор вопросов отличается.</p></details><details><summary>Когда требуется выезд инженера?</summary><p>Когда состояние системы неизвестно, нет актуальной документации или без осмотра нельзя надежно определить объем работ.</p></details><details><summary>Можно ли получить КП для организации?</summary><p>Да. После уточнения реквизитов объекта и состава задачи специалист подготовит персональный расчет или коммерческое предложение.</p></details></div></div></section>
+
+  <section class="pz-section pz-final" aria-labelledby="pz-final-title"><div class="pz-wrap pz-final-grid"><div class="pz-final-copy"><span class="pz-eyebrow">Поможем выбрать сценарий</span><h2 id="pz-final-title">Не нашли нужный расчет?</h2><p>Опишите объект и задачу. Специалист уточнит исходные данные и предложит подходящий калькулятор или следующий шаг.</p></div><form class="pz-form pz-lead-form" data-form-name="hub-final"><div class="pz-fields"><div class="pz-field"><label for="pz-name">Имя или компания</label><input id="pz-name" name="name" autocomplete="name" required></div><div class="pz-field"><label for="pz-phone">Телефон</label><input id="pz-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required></div><div class="pz-field"><label for="pz-object">Тип объекта</label><select id="pz-object" name="object_type"><option>Офис / бизнес-центр</option><option>Склад / логистика</option><option>Магазин / ТРЦ</option><option>Общепит</option><option>Производство</option><option>Другой объект</option></select></div><div class="pz-field"><label for="pz-task">Краткая задача</label><textarea id="pz-task" name="task" placeholder="Что нужно рассчитать?"></textarea></div><label class="pz-consent"><input name="consent" type="checkbox" required><span>Согласен с <a href="/privacy/" target="_blank" rel="noopener">политикой обработки персональных данных</a>.</span></label><button class="pz-btn pz-btn-primary" type="submit">Подобрать расчет</button><div class="pz-message pz-success" role="status">Заявка подготовлена. Сейчас откроется WhatsApp.</div><div class="pz-message pz-error" role="alert">Не удалось подготовить заявку. Позвоните нам по номеру +7 (771) 193-49-76.</div></div></form></div></section>
+<footer class="pz-footer"><div class="pz-wrap pz-footer-row"><span>© POZHARNIK.KZ · Информация не является публичной офертой.</span><span><a href="/obsluzhivanie/">Обслуживание</a> · <a href="/montazh/">Монтаж</a> · <a href="/audit/">Аудит</a> · <a href="/ognetushiteli/">Огнетушители</a> · <a href="/plany-evakuacii/">Планы эвакуации</a></span><span><a href="tel:+77711934976">+7 (771) 193-49-76</a> · <a href="https://wa.me/77711934976" target="_blank" rel="noopener">WhatsApp</a> · Алматы и область · ПН–ПТ 09:00–18:00</span></div></footer>
+</main>
+
+<div class="pz-mobile-cta" aria-label="Быстрые действия"><a class="pz-btn pz-btn-secondary" href="tel:+77711934976">Позвонить</a><a class="pz-btn pz-btn-primary" href="https://wa.me/77711934976" target="_blank" rel="noopener" data-whatsapp>WhatsApp</a></div>
+<div class="pz-modal" id="pzHelpModal" role="dialog" aria-modal="true" aria-labelledby="pz-modal-title"><div class="pz-modal-box"><button class="pz-close" type="button" data-close-help aria-label="Закрыть">×</button><h2 id="pz-modal-title">Помочь с выбором</h2><p style="color:#697984;margin:10px 0 18px">Оставьте параметры объекта — мы предложим подходящий расчет.</p><form class="pz-lead-form" data-form-name="hub-modal"><input type="hidden" name="service_type" id="pzServiceType" value="help"><div class="pz-fields"><div class="pz-field"><label for="pz-modal-name">Имя или компания</label><input id="pz-modal-name" name="name" autocomplete="name" required></div><div class="pz-field"><label for="pz-modal-phone">Телефон</label><input id="pz-modal-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required></div><div class="pz-field"><label for="pz-modal-object">Тип объекта</label><select id="pz-modal-object" name="object_type"><option>Офис / бизнес-центр</option><option>Склад / логистика</option><option>Магазин / ТРЦ</option><option>Общепит</option><option>Производство</option><option>Другой объект</option></select></div><label class="pz-consent"><input name="consent" type="checkbox" required><span>Согласен с <a href="/privacy/" target="_blank" rel="noopener">политикой обработки персональных данных</a>.</span></label><button class="pz-btn pz-btn-primary" type="submit">Получить расчет</button><div class="pz-message pz-success" role="status">Заявка подготовлена. Сейчас откроется WhatsApp.</div><div class="pz-message pz-error" role="alert">Не удалось подготовить заявку. Позвоните нам по номеру +7 (771) 193-49-76.</div></div></form></div></div>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://pozharnik.kz/kalkulyatory/#page","url":"https://pozharnik.kz/kalkulyatory/","name":"Калькуляторы пожарной безопасности в Алматы","description":"Предварительные расчеты для обслуживания и монтажа АПС, пожарного аудита, огнетушителей и планов эвакуации.","inLanguage":"ru-KZ"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://pozharnik.kz/"},{"@type":"ListItem","position":2,"name":"Калькуляторы","item":"https://pozharnik.kz/kalkulyatory/"}]},{"@type":"ItemList","name":"Калькуляторы Pozharnik.kz","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Обслуживание пожарной сигнализации","url":"https://pozharnik.kz/kalkulyatory/obsluzhivanie/"},{"@type":"ListItem","position":2,"name":"Монтаж пожарной сигнализации","url":"https://pozharnik.kz/kalkulyatory/montazh/"},{"@type":"ListItem","position":3,"name":"Пожарный аудит","url":"https://pozharnik.kz/kalkulyatory/audit/"},{"@type":"ListItem","position":4,"name":"Перезарядка огнетушителей"},{"@type":"ListItem","position":5,"name":"Планы эвакуации"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Насколько точен предварительный расчет?","acceptedAnswer":{"@type":"Answer","text":"Он показывает ориентировочный диапазон по введенным параметрам. Точность зависит от полноты исходных данных и состояния объекта."}},{"@type":"Question","name":"Нужно ли оставлять телефон, чтобы увидеть диапазон?","acceptedAnswer":{"@type":"Answer","text":"Нет. Предварительная вилка показывается до запроса телефона; контакт нужен для персонального расчета или КП."}},{"@type":"Question","name":"Когда требуется выезд инженера?","acceptedAnswer":{"@type":"Answer","text":"Когда состояние системы неизвестно, нет актуальной документации или без осмотра нельзя надежно определить объем работ."}}]}]}</script>
+<script>
+(function(){
+  "use strict";
+  var root=document.getElementById("pz-kalkulyatory-page"); if(!root)return;
+  var ANALYTICS_ENDPOINT="https://tilda-webhook-to-bigquery-324633937237.europe-west3.run.app";
+  var LEAD_ENDPOINT="/api/lead";
+  var WA_PHONE="77711934976";
+  var modal=root.querySelector("#pzHelpModal"),lastFocus=null,serviceType=root.querySelector("#pzServiceType");
+  function eventId(){return "pz_"+Date.now()+"_"+Math.random().toString(36).slice(2,10)}
+  function collectAttribution(){var q=new URLSearchParams(location.search),keys=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","gclid","yclid","gbraid","wbraid"],o={};keys.forEach(function(k){o[k]=q.get(k)||sessionStorage.getItem("pz_"+k)||"";if(o[k])sessionStorage.setItem("pz_"+k,o[k])});return o}
+  function track(name,data){var payload=Object.assign({event:name,event_id:eventId(),event_timestamp:new Date().toISOString(),service:"Хаб калькуляторов",page_path:location.pathname,landing_page:location.href,referrer:document.referrer,screen_width:screen.width,screen_height:screen.height,language:navigator.language},collectAttribution(),data||{});window.dataLayer=window.dataLayer||[];window.dataLayer.push(payload);try{fetch(ANALYTICS_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload),keepalive:true}).catch(function(){})}catch(e){}return payload}
+  function openModal(type){lastFocus=document.activeElement;if(serviceType)serviceType.value=type||"help";modal.classList.add("open");document.body.style.overflow="hidden";setTimeout(function(){var input=modal.querySelector("input:not([type=hidden])");if(input)input.focus()},20)}
+  function closeModal(){modal.classList.remove("open");document.body.style.overflow="";if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+  root.querySelectorAll("[data-open-help]").forEach(function(b){b.addEventListener("click",function(){openModal("help");track("calculator_help_open",{lead_source_block:"hub-filter"})})});
+  root.querySelectorAll("[data-request]").forEach(function(b){b.addEventListener("click",function(){openModal(b.dataset.request);track("calculator_request",{calculator_slug:b.dataset.request,calculator_status:"soon",lead_source_block:"calculator-card"})})});
+  root.querySelector("[data-close-help]").addEventListener("click",closeModal);modal.addEventListener("click",function(e){if(e.target===modal)closeModal()});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&modal.classList.contains("open"))closeModal()});
+  var filters=root.querySelectorAll("[data-filter]"),cards=root.querySelectorAll(".pz-card[data-category]");
+  filters.forEach(function(btn){btn.addEventListener("click",function(){var f=btn.dataset.filter;filters.forEach(function(x){x.setAttribute("aria-pressed",String(x===btn))});var shown=0;cards.forEach(function(card){var on=f==="all"||card.dataset.category===f;card.hidden=!on;if(on)shown++});root.querySelector("#pzEmpty").classList.toggle("show",shown===0);track("calculator_filter_select",{selected_filter:f})})});
+  root.querySelectorAll("[data-card-link]").forEach(function(a){a.addEventListener("click",function(){var card=a.closest("[data-calc]");track("calculator_card_click",{calculator_slug:card.dataset.calc,calculator_name:card.querySelector("h3").textContent.trim(),card_position:Array.prototype.indexOf.call(cards,card)+1,destination_url:a.href})})});
+  root.querySelectorAll("[data-whatsapp]").forEach(function(a){a.addEventListener("click",function(){track("whatsapp_click",{lead_source_block:"mobile-fixed"})})});
+  root.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener("click",function(){track("phone_click",{lead_source_block:"footer-or-mobile"})})});
+  function maskPhone(input){var digits=input.value.replace(/\D/g,"");if(digits.charAt(0)==="8")digits="7"+digits.slice(1);if(digits.charAt(0)!=="7")digits="7"+digits;digits=digits.slice(0,11);var s="+7";if(digits.length>1)s+=" ("+digits.slice(1,4);if(digits.length>=4)s+=") "+digits.slice(4,7);if(digits.length>=7)s+="-"+digits.slice(7,9);if(digits.length>=9)s+="-"+digits.slice(9,11);input.value=s}
+  root.querySelectorAll('input[type="tel"]').forEach(function(i){i.addEventListener("input",function(){maskPhone(i)})});
+  root.querySelectorAll(".pz-lead-form").forEach(function(form){form.addEventListener("submit",async function(e){e.preventDefault();if(!form.reportValidity())return;var button=form.querySelector('button[type="submit"]'),ok=form.querySelector(".pz-success"),err=form.querySelector(".pz-error"),fd=new FormData(form),data={};fd.forEach(function(v,k){data[k]=v});data.service="Хаб калькуляторов";data.service_type=data.service_type||"help";data.lead_type="calculator_help";data.form_name=form.dataset.formName;data.form_id=form.dataset.formName;data.lead_source_block=form.dataset.formName;button.disabled=true;track("form_submit_attempt",data);try{if(LEAD_ENDPOINT){var res=await fetch(LEAD_ENDPOINT,{method:"POST",body:fd});if(!res.ok)throw new Error("lead endpoint")};track("generate_lead",data);ok.classList.add("show");err.classList.remove("show");var text="Здравствуйте! Нужна помощь с расчетом на Pozharnik.kz.%0A%0AИмя/компания: "+encodeURIComponent(data.name||"")+"%0AТелефон: "+encodeURIComponent(data.phone||"")+"%0AОбъект: "+encodeURIComponent(data.object_type||"")+"%0AЗадача: "+encodeURIComponent(data.task||data.service_type||"");setTimeout(function(){window.open("https://wa.me/"+WA_PHONE+"?text="+text,"_blank","noopener")},250);form.reset()}catch(ex){track("form_submit_error",Object.assign({},data,{error:String(ex)}));err.classList.add("show");ok.classList.remove("show")}finally{button.disabled=false}})});
+  track("calculator_hub_view",{calculator_count:cards.length});
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://pozharnik.kz/kalkulyatory/#page","url":"https://pozharnik.kz/kalkulyatory/","name":"Калькуляторы пожарной безопасности в Алматы","description":"Предварительные расчеты для обслуживания и монтажа АПС, пожарного аудита, огнетушителей и планов эвакуации.","inLanguage":"ru-KZ"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://pozharnik.kz/"},{"@type":"ListItem","position":2,"name":"Калькуляторы","item":"https://pozharnik.kz/kalkulyatory/"}]},{"@type":"ItemList","name":"Калькуляторы Pozharnik.kz","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Обслуживание пожарной сигнализации","url":"https://pozharnik.kz/kalkulyatory/obsluzhivanie/"},{"@type":"ListItem","position":2,"name":"Монтаж пожарной сигнализации","url":"https://pozharnik.kz/kalkulyatory/montazh/"},{"@type":"ListItem","position":3,"name":"Пожарный аудит","url":"https://pozharnik.kz/kalkulyatory/audit/"},{"@type":"ListItem","position":4,"name":"Перезарядка огнетушителей","url":"https://pozharnik.kz/kalkulyatory/ognetushiteli/"},{"@type":"ListItem","position":5,"name":"Планы эвакуации","url":"https://pozharnik.kz/kalkulyatory/plany-evakuacii/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Насколько точен предварительный расчет?","acceptedAnswer":{"@type":"Answer","text":"Он показывает ориентировочный диапазон по введенным параметрам."}},{"@type":"Question","name":"Почему итоговая цена может отличаться?","acceptedAnswer":{"@type":"Answer","text":"На цену влияют состав оборудования, состояние системы, проект и согласованные сроки."}},{"@type":"Question","name":"Нужно ли оставлять телефон, чтобы увидеть диапазон?","acceptedAnswer":{"@type":"Answer","text":"Нет. Контакт нужен для персонального расчета или КП."}},{"@type":"Question","name":"Какие данные понадобятся?","acceptedAnswer":{"@type":"Answer","text":"Тип и площадь объекта, состояние системы или наличие проекта."}},{"@type":"Question","name":"Когда требуется выезд инженера?","acceptedAnswer":{"@type":"Answer","text":"Когда без осмотра нельзя надежно определить объем работ."}},{"@type":"Question","name":"Можно ли получить КП для организации?","acceptedAnswer":{"@type":"Answer","text":"Да, после уточнения реквизитов объекта и состава задачи."}}]}]}</script>
+<script>
+(function(){
+  var root=document.getElementById('pz-kalkulyatory-page'); if(!root)return;
+  var schemas=root.querySelectorAll('script[type="application/ld+json"]'); if(schemas.length>1)schemas[0].type='application/json';
+  function addField(form,id,label,name,control){
+    if(form.querySelector('[name="'+name+'"]'))return;
+    var box=document.createElement('div'); box.className='pz-field';
+    box.innerHTML='<label for="'+id+'">'+label+'</label>'+control;
+    var consent=form.querySelector('.pz-consent'); form.querySelector('.pz-fields').insertBefore(box,consent);
+  }
+  root.querySelectorAll('.pz-lead-form').forEach(function(form){
+    var modal=form.dataset.formName==='hub-modal', prefix=modal?'pz-modal-':'pz-';
+    addField(form,prefix+'task','Краткая задача','task','<textarea id="'+prefix+'task" name="task" placeholder="Что нужно рассчитать?"></textarea>');
+    addField(form,prefix+'channel','Предпочтительный способ связи','contact_channel','<select id="'+prefix+'channel" name="contact_channel"><option value="phone">Звонок</option><option value="whatsapp">WhatsApp</option></select>');
+  });
+})();
+</script>
+<script>
+(function(){
+  var root=document.getElementById('pz-kalkulyatory-page'); if(!root)return;
+  root.querySelectorAll('.pz-hero-copy,.pz-step p,.pz-compare p,.pz-faq p').forEach(function(node){node.innerHTML=node.innerHTML.replaceAll('предварительную вилку','предварительный диапазон').replaceAll('Предварительную вилку','Предварительный диапазон').replaceAll('вилка','диапазон').replaceAll('Вилка','Диапазон')});
+  var proof=root.querySelector('#pz-proof-title'); if(proof)proof.closest('section').hidden=true;
+  root.querySelectorAll('.pz-card').forEach(function(card){
+    var text=card.querySelector('p'); if(!text)return;
+    var descriptions={obsluzhivanie:'Действующая пожарная сигнализация: нужен регулярный сервис.',montazh:'Новый объект, реконструкция или замена пожарной сигнализации.',audit:'Перед проверкой, внутренним аудитом, арендой или покупкой объекта, а также при замечаниях по пожарной безопасности.',ognetushiteli:'Для организаций: перезарядка имеющихся огнетушителей или поставка новых.',"plany-evakuacii":'Объекту нужны новые или обновленные планы эвакуации.'};
+    text.innerHTML='<strong>Кому подойдет:</strong> '+descriptions[card.dataset.calc];
+    var inputs={obsluzhivanie:['Тип объекта','Количество извещателей','Количество приборов'],montazh:['Тип объекта','Площадь объекта','Наличие проекта'],audit:['Тип объекта','Площадь объекта','Известные замечания'],ognetushiteli:['Услуга: перезарядка или поставка','Модель и количество'],"plany-evakuacii":['Количество планов']};
+    var params=card.querySelector('.pz-meta');
+    if(params){
+      var paramsTitle=card.querySelector('.pz-card-params-title');
+      if(!paramsTitle)params.insertAdjacentHTML('beforebegin','<div class="pz-card-params-title">Для расчёта укажите:</div>');
+      params.innerHTML=inputs[card.dataset.calc].map(function(item){return '<li>'+item+'</li>'}).join('');
+    }
+  });
+  var finalSection=root.querySelector('.pz-final');
+  root.querySelectorAll('.pz-lead-form').forEach(function(form){
+    form.querySelectorAll('[name="object_type"],[name="contact_channel"]').forEach(function(field){var wrap=field.closest('.pz-field');if(wrap)wrap.style.display='none'});
+    form.querySelectorAll('[name="name"],[name="phone"]').forEach(function(field){field.required=false});
+    var task=form.querySelector('[name="task"]'); if(task){task.required=false;task.placeholder='Необязательно';var label=form.querySelector('label[for="'+task.id+'"]');if(label)label.textContent='Комментарий'};
+  });
+  var modalTitle=root.querySelector('#pz-modal-title'); if(modalTitle)modalTitle.textContent='Оставить заявку или задать вопрос';
+  var modalButton=root.querySelector('[data-form-name="hub-modal"] [type="submit"]'); if(modalButton)modalButton.textContent='Отправить заявку';
+  var finalButton=root.querySelector('[data-form-name="hub-final"] [type="submit"]'); if(finalButton)finalButton.textContent='Отправить заявку';
+  root.querySelectorAll('.pz-faq details').forEach(function(item){
+    var question=item.querySelector('summary').textContent, answer=item.querySelector('p');
+    if(question.indexOf('Какие данные понадобятся')!==-1){item.remove();return}
+    if(question.indexOf('Почему итоговая цена')!==-1)answer.textContent='Предварительный расчет строится по указанным вами данным. После осмотра может уточниться объем работ: необходимость проектирования или фактическое количество оборудования.';
+    if(question.indexOf('Можно ли получить КП')!==-1)answer.textContent='Предварительный диапазон доступен на сайте. Коммерческое предложение для организации подготовим после обследования объекта и уточнения состава работ.';
+  });
+  if(finalSection){
+    var finalCopy=finalSection.querySelector('.pz-final-copy');
+    if(finalCopy&&!finalCopy.querySelector('.pz-whatsapp-panel'))finalCopy.insertAdjacentHTML('beforeend','<a class="pz-btn pz-btn-primary pz-whatsapp-panel" style="margin-top:20px" href="https://wa.me/77711934976" target="_blank" rel="noopener">Написать в WhatsApp</a>');
+  }
+})();
+</script>
+<script>
+(function(){
+  var root=document.getElementById('pz-kalkulyatory-page'); if(!root)return;
+  root.querySelectorAll('.pz-lead-form').forEach(function(form){
+    form.addEventListener('submit',async function(e){
+      e.preventDefault(); e.stopImmediatePropagation();
+      if(!form.reportValidity())return;
+      var button=form.querySelector('[type="submit"]'),ok=form.querySelector('.pz-success'),err=form.querySelector('.pz-error'),fd=new FormData(form);
+      fd.set('service','Хаб калькуляторов'); fd.set('service_type','help'); fd.set('event_id','pz_hub_'+Date.now()); fd.set('page_url',location.href);
+      button.disabled=true; err.classList.remove('show');
+      try{
+        var response=await fetch('/api/lead',{method:'POST',body:fd});
+        if(!response.ok)throw new Error('lead_not_accepted');
+        ok.textContent='Заявка отправлена. Специалист свяжется с вами.'; ok.classList.add('show'); form.reset();
+        window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'generate_lead',service:'Хаб калькуляторов'});
+      }catch(error){err.textContent='Не удалось отправить заявку. Попробуйте позже или напишите в WhatsApp.';err.classList.add('show')}
+      finally{button.disabled=false}
+    },true);
+  });
+})();
+</script>
+</div>
+</body>
+</html>
