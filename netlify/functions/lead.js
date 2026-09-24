@@ -25,7 +25,7 @@ export function validateLead(data) {
   const phone = clean(data.phone, 40).replace(/\D/g, "");
   if (!/^7\d{10}$/.test(phone)) fields.phone = "Укажите номер в формате +7XXXXXXXXXX";
   if (clean(data.consent) !== "true") fields.consent = "Нужно согласие на обработку данных";
-  if (!clean(data.service, 100)) fields.service = "Выберите услугу";
+  if (!clean(data.service_type, 100)) fields.service_type = "Не определён тип услуги";
   if (!clean(data.event_id, 100)) fields.event_id = "Не найден идентификатор заявки";
   return Object.keys(fields).length ? fields : null;
 }
@@ -34,7 +34,7 @@ export function bitrixPayload(data) {
   const event = clean(data.event_id, 100);
   const lines = [
     `event_id: ${event}`,
-    `Услуга: ${clean(data.service, 100)}`,
+    `Услуга: ${clean(data.service_type, 100)}`,
     `ICP: ${clean(data.icp_type, 100)}`,
     `Источник CTA: ${clean(data.cta_location, 160)}`,
     `Площадь: ${clean(data.object_area, 80)}`,
@@ -44,12 +44,12 @@ export function bitrixPayload(data) {
   ].filter((line) => !line.endsWith(": "));
   return {
     fields: {
-      TITLE: `Pozharnik.kz — ${clean(data.service, 100)} — ${event}`,
+      TITLE: `Pozharnik.kz — ${clean(data.service_type, 100)} — ${event}`,
       NAME: clean(data.name, 160),
       PHONE: [{ VALUE: `+${clean(data.phone, 40).replace(/\D/g, "")}`, VALUE_TYPE: "WORK" }],
       EMAIL: clean(data.email, 160) ? [{ VALUE: clean(data.email, 160), VALUE_TYPE: "WORK" }] : undefined,
       COMMENTS: lines.join("\n"),
-      SOURCE_DESCRIPTION: "Pozharnik.kz / главная"
+      SOURCE_DESCRIPTION: "Pozharnik.kz / обслуживание пожарной сигнализации"
     },
     params: { REGISTER_SONET_EVENT: "Y" }
   };
@@ -79,6 +79,27 @@ async function sendAnalytics(data, leadId, fetcher = fetch) {
   if (!response.ok) throw new Error("Analytics endpoint rejected the event");
 }
 
+async function sendTelegram(data, leadId, fetcher = fetch) {
+  const token = env("TELEGRAM_BOT_TOKEN");
+  const chatId = env("TELEGRAM_CHAT_ID");
+  if (!token || !chatId) return;
+  const text = [
+    "Новая заявка Pozharnik.kz",
+    `Лид: ${leadId}`,
+    `Услуга: ${clean(data.service_type, 100)}`,
+    `Имя: ${clean(data.name, 160)}`,
+    `Телефон: ${clean(data.phone, 40)}`,
+    `Тип объекта: ${clean(data.object_type, 100)}`,
+    `Регион: ${clean(data.region, 100)}`,
+    `Расчёт: ${clean(data.calculator_result, 300)}`
+  ].filter(Boolean).join("\n");
+  await fetcher(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ chat_id: chatId, text })
+  });
+}
+
 export async function processLead(data, { fetcher = fetch, store } = {}) {
   const errors = validateLead(data);
   if (errors) return { status: 422, body: validationError(errors) };
@@ -90,6 +111,7 @@ export async function processLead(data, { fetcher = fetch, store } = {}) {
   await leads.setJSON(key, { lead_id: leadId, created_at: new Date().toISOString() });
   let analyticsRecorded = true;
   try { await sendAnalytics(data, leadId, fetcher); } catch { analyticsRecorded = false; }
+  try { await sendTelegram(data, leadId, fetcher); } catch { /* Bitrix lead remains accepted if Telegram is unavailable. */ }
   return { status: 201, body: { accepted: true, lead_id: leadId, analytics_recorded: analyticsRecorded } };
 }
 
