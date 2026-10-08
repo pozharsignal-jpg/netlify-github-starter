@@ -1,0 +1,23 @@
+﻿Этап 4. SEO страницы
+Основание: медиаплан 4.5 от 08.10.2026, раздел 7а с приоритетом разделов 33–37.
+
+01. ТЗ страницы Правила пожарной безопасности РК Pozharnik.kz.docx
+    /pravila-pb-rk/
+02. ТЗ страницы Приказ МЧС РК №55 Pozharnik.kz.docx
+    /pravila-pb-rk/prikaz-55/
+03. ТЗ страницы Проверка ДЧС Pozharnik.kz.docx
+    /pravila-pb-rk/proverka-dchs/
+04. ТЗ страницы Противопожарные инструктажи Pozharnik.kz.docx
+    /instruktazhi/
+05. ТЗ страницы Как отключить или сбросить сигнализацию Pozharnik.kz.docx
+    /srabotka/kak-otklyuchit/
+06. ТЗ страницы Ложные срабатывания Pozharnik.kz.docx
+    /srabotka/lozhnye/
+07. ТЗ страницы Прибор показывает неисправность Pozharnik.kz.docx
+    /srabotka/neispravnost/
+08. ТЗ страницы Адресная и пороговая АПС Pozharnik.kz.docx
+    /adresnaya-vs-porogovaya/
+09. ТЗ страницы Периодичность обслуживания АПС Pozharnik.kz.docx
+    /periodichnost-obsluzhivaniya-aps/
+10. ТЗ страницы Стоимость пожарной сигнализации Pozharnik.kz.docx
+    /stoimost-pozharnoy-signalizacii/

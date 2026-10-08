@@ -1,0 +1,27 @@
+﻿Этап 1. Основные конверсионные страницы
+Основание: медиаплан 4.5 от 08.10.2026, раздел 7а с приоритетом разделов 33–37.
+
+01. ТЗ Главная страница Pozharnik.kz.docx
+    /
+02. ТЗ обслуживание пожарной сигнализации.docx
+    /obsluzhivanie/
+03. ТЗ страницы Смена подрядчика Pozharnik.kz.docx
+    /smena-podryadchika/
+04. ТЗ страницы Пакеты обслуживания Pozharnik.kz.docx
+    /pakety/
+05. 09_ТЗ_страница_Кузет_ритейл_Pozharnik_v1_1.docx
+    /kuzet/
+06. ТЗ_страницы_Монтаж_пожарной_сигнализации_Pozharnik.kz.docx
+    /montazh/
+07. ТЗ Срочная помощь Pozharnik.kz.docx
+    /srabotka/
+08. ТЗ Пожарный аудит Pozharnik.kz.docx
+    /audit/
+09. ТЗ страницы Хаб калькуляторов Pozharnik.kz.docx
+    /kalkulyatory/
+10. ТЗ Калькулятор обслуживания Pozharnik.kz.docx
+    /kalkulyatory/obsluzhivanie/
+11. ТЗ Калькулятор монтажа Pozharnik.kz итоговое.docx
+    /kalkulyatory/montazh/
+12. ТЗ Калькулятор аудита Pozharnik.kz.docx
+    /kalkulyatory/audit/

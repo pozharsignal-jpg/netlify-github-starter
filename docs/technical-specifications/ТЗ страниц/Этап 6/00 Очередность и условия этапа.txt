@@ -1,0 +1,15 @@
+﻿Этап 6. Отраслевые страницы монтажа
+Основание: медиаплан 4.5 от 08.10.2026, раздел 7а с приоритетом разделов 33–37.
+
+01. ТЗ страницы Монтаж АПС для склада Pozharnik.kz.docx
+    /montazh/sklad/
+02. ТЗ страницы Монтаж АПС для производства Pozharnik.kz.docx
+    /montazh/proizvodstvo/
+03. ТЗ страницы Монтаж АПС для офиса Pozharnik.kz.docx
+    /montazh/ofis/
+04. ТЗ страницы Монтаж АПС для кафе и ресторана Pozharnik.kz.docx
+    /montazh/kafe/
+05. ТЗ страницы Монтаж АПС для магазина Pozharnik.kz.docx
+    /montazh/magazin/
+06. ТЗ страницы Монтаж АПС для медицинского центра Pozharnik.kz.docx
+    /montazh/medcentr/

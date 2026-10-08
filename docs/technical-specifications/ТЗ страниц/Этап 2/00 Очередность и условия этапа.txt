@@ -1,0 +1,15 @@
+﻿Этап 2. Входные продукты
+Основание: медиаплан 4.5 от 08.10.2026, раздел 7а с приоритетом разделов 33–37.
+
+01. ТЗ страницы Перезарядка огнетушителей Pozharnik.kz.docx
+    /perezaryadka-ognetushiteley/
+02. ТЗ страницы Планы эвакуации Pozharnik.kz.docx
+    /plany-evakuacii/
+03. ТЗ страницы Испытание пожарных кранов Pozharnik.kz.docx
+    /ispytaniya-pozharnyh-kranov/
+04. ТЗ страницы Стресс-тест пожарной системы Pozharnik.kz.docx
+    /stress-test/
+05. ТЗ страницы Калькулятор огнетушителей Pozharnik.kz.docx
+    /kalkulyatory/ognetushiteli/
+06. ТЗ страницы Калькулятор планов эвакуации Pozharnik.kz.docx
+    /kalkulyatory/plany-evakuacii/
