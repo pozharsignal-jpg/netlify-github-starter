@@ -6,9 +6,9 @@
   function current() {
     try {
       var m = document.cookie.match(/(?:^|;\s*)pz_consent_v2=([^;]*)/);
-      if (m) return JSON.parse(decodeURIComponent(m[1]));
+      if (m) { var saved = JSON.parse(decodeURIComponent(m[1])) || {}; saved.marketing = saved.marketing || "denied"; return saved; }
       var c = JSON.parse(localStorage.getItem("pz_analytics_consent") || "{}");
-      return {analytics:c.consent_analytics || "denied",ads:c.consent_ads || "denied",marketing:c.consent_marketing || c.consent_ads || "denied",timestamp:c.consent_timestamp || "",version:c.consent_version || "2.0"};
+      return {analytics:c.consent_analytics || "denied",ads:c.consent_ads || "denied",marketing:c.consent_marketing || "denied",timestamp:c.consent_timestamp || "",version:c.consent_version || "2.0"};
     } catch (e) { return {analytics:"denied",ads:"denied",marketing:"denied",timestamp:"",version:"2.0"}; }
   }
   function update(c) {
@@ -58,7 +58,7 @@
     panel.setAttribute("role","dialog");
     panel.setAttribute("aria-labelledby","pz-unified-cookie-title");
     panel.setAttribute("aria-describedby","pz-unified-cookie-description");
-    panel.innerHTML = '<h2 id="pz-unified-cookie-title">Настройки cookies</h2><p id="pz-unified-cookie-description">Используем cookies для аналитики и рекламы только с вашего согласия. Выберите подходящий вариант — отправить заявку можно при любом выборе.</p><div id="pz-unified-cookie-settings" hidden><label><input type="checkbox" name="pz-ui-analytics">Аналитика сайта</label><label><input type="checkbox" name="pz-ui-ads">Измерение рекламы</label><label><input type="checkbox" name="pz-ui-marketing">Персонализация рекламы и маркетинговые коммуникации</label></div><div class="pz-cookie-actions"><button type="button" data-pz-cookie="all">Принять все</button><button type="button" data-pz-cookie="necessary">Только необходимые</button><button type="button" data-pz-cookie="custom" aria-controls="pz-unified-cookie-settings" aria-expanded="false">Настроить</button><button type="button" data-pz-cookie="save" hidden>Сохранить выбор</button></div>';
+    panel.innerHTML = '<h2 id="pz-unified-cookie-title">Настройки cookies</h2><p id="pz-unified-cookie-description">Используем cookies для аналитики сайта, измерения и персонализации рекламы и маркетинговых коммуникаций только с вашего согласия. Отправить заявку можно при любом выборе.</p><div id="pz-unified-cookie-settings" hidden><label><input type="checkbox" name="pz-ui-analytics">Аналитика сайта</label><label><input type="checkbox" name="pz-ui-ads">Измерение рекламы</label><label><input type="checkbox" name="pz-ui-marketing">Персонализация рекламы и маркетинговые коммуникации</label></div><div class="pz-cookie-actions"><button type="button" data-pz-cookie="all">Принять все</button><button type="button" data-pz-cookie="necessary">Только необходимые</button><button type="button" data-pz-cookie="custom" aria-controls="pz-unified-cookie-settings" aria-expanded="false">Настроить</button><button type="button" data-pz-cookie="save" hidden>Сохранить выбор</button></div>';
     document.body.appendChild(panel);
     var closeButton=document.createElement("button");closeButton.type="button";closeButton.setAttribute("data-pz-cookie","close");closeButton.textContent="Закрыть";closeButton.hidden=true;panel.querySelector(".pz-cookie-actions").appendChild(closeButton);
     settings = document.getElementById("pz-unified-cookie-settings");
