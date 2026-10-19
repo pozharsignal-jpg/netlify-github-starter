@@ -1,0 +1,125 @@
+.PZROOT .hero-grid,.PZROOT .pz-hero-grid{align-items:start!important}
+.PZROOT form[data-form-id]{scroll-margin-top:90px;color:#102a43;background:#fff;border-radius:18px;border:1px solid #cfd9dc;padding:20px;margin:0;min-width:0}
+.PZROOT form[data-form-id] h2{font-size:23px;margin:0 0 10px;color:#102a43}
+.PZROOT form[data-form-id] p{color:#526b7b;font-size:14px;line-height:1.45;margin:8px 0}
+.PZROOT form[data-form-id] .fields,.PZROOT form[data-form-id] .pz-fields{gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.PZROOT form[data-form-id] label:has(textarea),.PZROOT form[data-form-id] label:has(input[type=checkbox]),.PZROOT form[data-form-id] button[type=submit],.PZROOT form[data-form-id] [data-form-status]{grid-column:1/-1}
+.PZROOT form[data-form-id] textarea{min-height:64px;height:64px}
+.PZROOT [data-form-status]{min-height:20px}
+.PZROOT [data-selection-summary]:empty{display:none}
+.PZROOT [hidden]{display:none!important}
+.PZROOT .fire-warning{background:rgba(8,31,48,.5);color:#fff;border-left:4px solid #ef4437;border-radius:8px;padding:18px;margin:18px 0}
+.PZROOT .fire-warning strong{display:block;font-size:25px;line-height:1.2}
+.PZROOT .fire-warning p{font-size:16px;line-height:1.5;margin:10px 0 0}
+.PZROOT .review-note{background:#fff2a8;color:#493e0b;padding:14px;border:1px solid #dbc253;border-radius:8px;margin:16px 0;font-size:14px}
+.PZROOT form[data-form-id] label:has([name=object_type]){grid-column:1/-1}
+.PZROOT [data-result] ul{padding-left:20px;font-size:14px;line-height:1.5}
+.PZROOT .installation-estimator{background:#fff;color:#102a43;padding:22px;border-radius:18px;border:1px solid #cfd9dc;min-width:0}
+.PZROOT .installation-estimator h2{font-size:24px;margin:0 0 10px}
+.PZROOT .installation-estimator p{font-size:13px;line-height:1.5;color:#526b7b}
+.PZROOT .installation-estimator .pz-calc-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.PZROOT .installation-estimator label{display:grid;gap:5px;font-size:12px;font-weight:700;min-width:0}
+.PZROOT .installation-estimator input,.PZROOT .installation-estimator select{width:100%;box-sizing:border-box;min-width:0;border:1px solid #cfd9dc;border-radius:7px;padding:9px;background:#fff;color:#102a43;font:14px Arial,sans-serif}
+.PZROOT .installation-estimator .pz-calc-check{display:flex;gap:8px;align-items:flex-start;margin-top:14px;line-height:1.5}
+.PZROOT .installation-estimator input[type=checkbox]{width:16px;height:16px;padding:0;margin-top:2px;flex:0 0 16px}
+.PZROOT .installation-estimator .cost-calc-result{border-top:1px solid #dfe6e8;margin-top:16px;padding-top:12px}
+.PZROOT .installation-estimator h3{font-size:16px;margin:0 0 8px}
+.PZROOT .installation-estimator #pz-price{font-size:27px;font-weight:700;color:#14364b}
+.PZROOT .installation-estimator #pz-result-factors{padding-left:18px;font-size:12px;line-height:1.5}
+.PZROOT .cost-calc-contact>summary{list-style:none;background:#e54132;color:#fff;border-radius:7px;padding:12px;text-align:center;cursor:pointer;font-weight:700;font-size:14px}
+.PZROOT .cost-calc-contact>summary::-webkit-details-marker{display:none}
+.PZROOT .cost-calc-contact form[data-form-id]{margin-top:14px;padding:14px}
+@media(max-width:520px){.PZROOT .installation-estimator{padding:16px}.PZROOT .installation-estimator .pz-calc-fields{grid-template-columns:1fr}}
+.PZROOT .final,.PZROOT .pz-final{padding:32px 0}
+.PZROOT .final-grid,.PZROOT .pz-final-grid{display:block}
+.PZROOT .final h2,.PZROOT .pz-final h2{margin:8px 0}
+.PZROOT .stage4-checklist{display:grid;gap:12px;max-width:840px}
+.PZROOT .stage4-checklist fieldset{margin:0;padding:14px;border:1px solid #cfd9dc;border-radius:10px;min-width:0}
+.PZROOT .stage4-checklist legend{font-weight:700;padding:0 6px}
+.PZROOT .stage4-checklist .choices{display:flex;gap:10px;flex-wrap:wrap}
+.PZROOT .stage4-checklist label{display:flex;gap:6px;align-items:center;font-size:14px;padding:6px}
+.PZROOT .stage4-checklist input{width:auto;margin:0}
+.PZROOT .stage4-checklist [data-audit-plan]{background:#f3f6f7;padding:14px;border-radius:10px}
+#pz-fire-rules-page [hidden]{display:none!important}
+#pz-fire-rules-page #checklist{padding:32px 0}
+#pz-fire-rules-page #checklist .pz-head{margin-bottom:16px}
+#pz-fire-rules-page #checklist h2{font-size:26px;margin:6px 0 10px}
+#pz-fire-rules-page #checklist .pz-lead{font-size:15px;line-height:1.5}
+#pz-fire-rules-page .stage4-checklist.is-wizard{max-width:800px;padding:20px;background:#fff;border:1px solid #cfd9dc;border-radius:12px;gap:12px}
+#pz-fire-rules-page .stage4-checklist fieldset{border:0;padding:0;margin:0;min-width:0}
+#pz-fire-rules-page .stage4-checklist legend{font-size:18px;font-weight:700;padding:0}
+#pz-fire-rules-page .stage4-checklist fieldset p{margin:10px 0 14px}
+#pz-fire-rules-page .stage4-checklist .choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#pz-fire-rules-page .stage4-checklist .choices label{display:flex;align-items:center;gap:8px;padding:10px;border:1px solid #cfd9dc;border-radius:7px;margin:0;font-size:14px;cursor:pointer}
+#pz-fire-rules-page .stage4-checklist input{width:16px;height:16px;margin:0;flex:0 0 16px}
+#pz-fire-rules-page .checklist-progress{margin:0;color:#526b7b;font-weight:700;font-size:14px}
+#pz-fire-rules-page .checklist-navigation{display:flex;justify-content:space-between;gap:12px}
+#pz-fire-rules-page .checklist-navigation button{border:1px solid #cfd9dc;border-radius:7px;padding:10px 18px;cursor:pointer;font:700 14px Arial,sans-serif;background:#fff;color:#102a43}
+#pz-fire-rules-page .checklist-navigation button:last-child{background:#ef3f32;color:#fff;border-color:#ef3f32}
+#pz-fire-rules-page .checklist-navigation button:disabled{opacity:.5;cursor:default}
+#pz-fire-rules-page form[data-form-id] label:has([name=object_type]){grid-column:1/-1}
+[data-stage4-consent]{position:fixed;z-index:9999;bottom:16px;left:16px;right:16px;margin:auto;max-width:570px;background:white;color:#102a43;border:1px solid #cfd9dc;border-radius:12px;box-shadow:0 10px 28px #102a4333;padding:14px;font:13px/1.45 Arial,sans-serif}
+[data-stage4-consent] p{margin:5px 0 10px}
+[data-stage4-consent] button{border:1px solid #cfd9dc;border-radius:7px;padding:9px 12px;background:#fff;color:#102a43;cursor:pointer}
+[data-stage4-consent] [data-consent-all]{background:#ef3f32;color:#fff;border-color:#ef3f32}
+.pz-consent-settings{position:fixed;bottom:5px;right:8px;z-index:1000;border:1px solid #cfd9dc;border-radius:6px;padding:4px 7px;background:#fff;color:#102a43;font:11px Arial,sans-serif;cursor:pointer}
+@media(max-width:520px){.PZROOT form[data-form-id]{padding:18px}.PZROOT form[data-form-id] h2{font-size:22px}.PZROOT form[data-form-id] .fields,.PZROOT form[data-form-id] .pz-fields{grid-template-columns:1fr}.PZROOT .hero,.PZROOT .pz-hero{padding-bottom:32px}.PZROOT .stage4-checklist .choices{gap:2px}.PZROOT .stage4-checklist label{font-size:13px}.pz-consent-settings{bottom:58px}}
+/* Consistent editorial rhythm for the stage-4 collection. */
+.PZROOT main .normative-links{display:grid;gap:14px;margin:18px 0}
+.PZROOT main .normative-links .lead{font-size:16px;line-height:1.6;margin:0;max-width:100%}
+.PZROOT main .normative-links a{display:inline;text-decoration:underline;text-underline-offset:3px}
+.PZROOT .emergency-contact-actions{margin-top:24px!important;gap:12px!important}
+.PZROOT .emergency-contact-actions .btn{min-width:150px;min-height:50px;box-shadow:0 4px 14px #071e2b33}
+.PZROOT .emergency-contact-actions .secondary{border:2px solid #fff}
+.PZROOT .audit-source-link{display:inline-block;padding:8px 0;text-decoration:underline;text-underline-offset:4px;cursor:pointer;position:relative;z-index:1}
+.PZROOT .calculator-bridge{padding:26px;border-radius:18px;background:#fff;color:#102a43;border:1px solid #cfd9dc}
+.PZROOT .calculator-bridge h2{font-size:26px;line-height:1.2;margin:10px 0 14px}
+.PZROOT .calculator-bridge p{font-size:15px;line-height:1.6;color:#526b7b;margin:12px 0 18px}
+.PZROOT .calculator-bridge .bridge-label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#667984;font-weight:700}
+.PZROOT .calculator-bridge .btn{width:100%;font-size:14px}
+.PZROOT .calculator-bridge .bridge-destination{font-size:12px;margin:10px 0 0;text-align:center}
+.PZROOT .request-card form[data-form-id]{border:0;box-shadow:none;padding:18px 0 0;margin-top:18px;border-top:1px solid #dce5e7;border-radius:0}
+.PZROOT .request-card .result{background:transparent;padding:0;margin-top:16px}
+.PZROOT .service-sequence{margin-top:24px;border:1px solid #dce5e7;border-radius:12px;padding:20px;background:#fff}
+.PZROOT .service-sequence h3{font-size:20px;margin:0 0 16px}
+.PZROOT .service-sequence ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 24px;list-style-position:inside;margin:0;padding:0;font-size:14px;line-height:1.5}
+@media(max-width:820px){.PZROOT .service-sequence ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.PZROOT .calculator-bridge{padding:20px}.PZROOT .calculator-bridge h2{font-size:23px}.PZROOT .emergency-contact-actions .btn{min-width:0;flex:1}.PZROOT .service-sequence ol{grid-template-columns:1fr}}
+.PZROOT main .section,.PZROOT main .pz-section{padding:48px 0}
+.PZROOT main .head,.PZROOT main .pz-head{margin-bottom:22px}
+.PZROOT main .grid,.PZROOT main .pz-grid{gap:20px;align-items:stretch}
+.PZROOT main .grid>.card,.PZROOT main .pz-grid>.pz-card{height:100%;padding:24px}
+.PZROOT main .grid:has(>:last-child:nth-child(4)),.PZROOT main .pz-grid:has(>:last-child:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}
+.PZROOT main .tool{grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.PZROOT main .tool>.card{padding:22px}
+.PZROOT main .tool h2{font-size:30px;line-height:1.18;max-width:540px}
+.PZROOT main .tool .lead{font-size:16px;line-height:1.65;margin:16px 0}
+.PZROOT .selection-instruction{font-size:14px;line-height:1.6;color:#526b7b;max-width:480px}
+.PZROOT main .options{gap:10px}
+.PZROOT main .option{min-height:48px;align-items:flex-start;padding:12px;font-size:14px;line-height:1.5;cursor:pointer}
+.PZROOT main .option input{flex:0 0 16px;width:16px;height:16px;margin-top:2px;accent-color:#14364b}
+.PZROOT main .result{padding:16px;margin-top:16px;font-size:14px;line-height:1.6;min-height:0}
+.PZROOT main .result p{margin:0 0 10px}
+.PZROOT main .normative-reference{border:1px solid #dce5e7;border-radius:10px;padding:16px 18px;margin:18px 0;background:#fff}
+.PZROOT main .normative-reference summary{font-size:16px;font-weight:700;cursor:pointer}
+.PZROOT main .normative-reference .lead{font-size:14px;line-height:1.6;margin:14px 0 0;max-width:none}
+.PZROOT main .final,.PZROOT main .pz-final{padding:36px 0}
+.PZROOT main .final h2,.PZROOT main .pz-final h2{max-width:900px;font-size:30px;line-height:1.2}
+.PZROOT main .final p,.PZROOT main .pz-final p{max-width:760px;line-height:1.6;margin:14px 0 18px}
+.PZROOT form[data-form-id] [data-form-status]:empty,.PZROOT form[data-form-id] .status:empty{display:none}
+.PZROOT form[data-form-id] .check span{line-height:1.5}
+.PZROOT form[data-form-id] .fields,.PZROOT form[data-form-id] .pz-fields{margin-top:12px}
+.PZROOT.stage4-cost-page main .hero-grid{grid-template-columns:1fr;gap:28px}
+.PZROOT.stage4-cost-page main .hero-grid>div:first-child{max-width:850px}
+.PZROOT.stage4-cost-page main .hero{padding-bottom:48px}
+.PZROOT.stage4-cost-page .installation-estimator{padding:28px}
+.PZROOT.stage4-cost-page .installation-estimator>h2{font-size:26px}
+.PZROOT.stage4-cost-page .installation-estimator>p{font-size:15px;margin:10px 0 22px}
+.PZROOT .cost-estimator-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.PZROOT .cost-estimator-output{border-left:1px solid #dce5e7;padding-left:32px}
+.PZROOT .installation-estimator .cost-estimator-output .cost-calc-result{border:0;padding:0;margin:0}
+.PZROOT .cost-estimator-output #pz-result-factors{font-size:14px;line-height:1.65}
+.PZROOT .cost-estimator-output #pz-price{font-size:34px;margin:12px 0}
+.PZROOT .cost-estimator-output .cost-calc-disclaimer{margin:18px 0}
+@media(max-width:820px){.PZROOT main .tool{grid-template-columns:1fr;gap:20px}.PZROOT main .tool>div:first-child{max-width:680px}.PZROOT main .section,.PZROOT main .pz-section{padding:36px 0}.PZROOT .cost-estimator-grid{grid-template-columns:1fr;gap:22px}.PZROOT .cost-estimator-output{border-left:0;border-top:1px solid #dce5e7;padding:22px 0 0}}
+@media(max-width:520px){.PZROOT main .grid,.PZROOT main .pz-grid,.PZROOT main .grid:has(>:last-child:nth-child(4)),.PZROOT main .pz-grid:has(>:last-child:nth-child(4)){grid-template-columns:1fr}.PZROOT main .grid>.card,.PZROOT main .pz-grid>.pz-card{padding:20px}.PZROOT main .tool h2,.PZROOT main .final h2,.PZROOT main .pz-final h2{font-size:27px}.PZROOT main .tool>.card{padding:16px}.PZROOT.stage4-cost-page .installation-estimator{padding:18px}.PZROOT.stage4-cost-page .installation-estimator>h2{font-size:23px}.PZROOT .cost-estimator-output #pz-price{font-size:29px}}

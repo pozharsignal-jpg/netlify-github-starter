@@ -1,0 +1,25 @@
+{
+  "version": "stage4-v73",
+  "page": "/pravila-pb-rk/",
+  "saved_at": "2026-10-19",
+  "files": [
+    {
+      "path": "landing/pravila-pb-rk/index.html",
+      "size": 34253,
+      "sha256": "fad4c3de73995a5f5fba59e515957d67cdf464bb5d4f68ec9278017b1c13d3aa",
+      "git_sha": "8f340cce9a751a0e6c77e55dd5d6dc4b269d7a10"
+    },
+    {
+      "path": "landing/assets/pz-stage4.css",
+      "size": 12990,
+      "sha256": "b29e2cf10e73b837e2d697b3e46d697182a39f2865a2e1b266ec28ee1f58291b",
+      "git_sha": "39ecc3a6e6079fcc41e3bda5f1764a82835b9f12"
+    },
+    {
+      "path": "landing/assets/pz-stage4.js",
+      "size": 17556,
+      "sha256": "d8b48afb48b43b7c998bbfbbfcd5866a67120701b4e7db7065c5e74114accdab",
+      "git_sha": "226ef7c3f1cb72ef78551857fa0b4e79f5fea935"
+    }
+  ]
+}
