@@ -1,0 +1,31 @@
+{
+  "version": "stage4-v89",
+  "page": "/srabotka/lozhnye/",
+  "saved_at": "2026-10-19",
+  "files": [
+    {
+      "path": "landing/srabotka/lozhnye/index.html",
+      "size": 28999,
+      "sha256": "cecce0ccc03626661d390b96babec4d29d970ba65d6a313dd4d04a5c58a8e548",
+      "git_sha": "bf270f07c0d900024bb8e6cb1d6ce7858e1f5d6c"
+    },
+    {
+      "path": "landing/assets/pz-stage4.css",
+      "size": 12990,
+      "sha256": "b29e2cf10e73b837e2d697b3e46d697182a39f2865a2e1b266ec28ee1f58291b",
+      "git_sha": "39ecc3a6e6079fcc41e3bda5f1764a82835b9f12"
+    },
+    {
+      "path": "landing/assets/pz-stage4.js",
+      "size": 17556,
+      "sha256": "d8b48afb48b43b7c998bbfbbfcd5866a67120701b4e7db7065c5e74114accdab",
+      "git_sha": "226ef7c3f1cb72ef78551857fa0b4e79f5fea935"
+    },
+    {
+      "path": "landing/assets/pz-favicon.svg",
+      "size": 176,
+      "sha256": "b90c23749a9c0c406b128dc485ff01119e06cdd2343b391bbd3de714489d3d0f",
+      "git_sha": "4ff68bd284b6ef1625d4b193ddadb23295427a4c"
+    }
+  ]
+}
