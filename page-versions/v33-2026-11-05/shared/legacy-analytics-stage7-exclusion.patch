@@ -1,0 +1,42 @@
+--- a/landing/04_POZHARNIK_ANALYTICS_2_2.js
++++ b/landing/04_POZHARNIK_ANALYTICS_2_2.js
+@@ -265,6 +265,7 @@
+   }
+ 
+   function enrichForm(form) {
++    if (form && form.closest('[data-pz-event-owner="stage7"]')) return;
+     if (!form || !form.querySelector("input, textarea, select")) return;
+ 
+     var cta = currentCta();
+@@ -354,6 +355,7 @@
+   document.addEventListener(
+     "click",
+     function (event) {
++      if (event.target && event.target.closest && event.target.closest('[data-pz-event-owner="stage7"]')) return;
+       var element = event.target.closest(
+         "[data-analytics-location], a, button, .t-btn, [role='button']"
+       );
+@@ -395,6 +397,7 @@
+   document.addEventListener(
+     "focusin",
+     function (event) {
++      if (event.target && event.target.closest && event.target.closest('[data-pz-event-owner="stage7"]')) return;
+       var form = event.target.closest("form, .t-form");
+       if (!form || startedForms.indexOf(form) > -1) return;
+       startedForms.push(form);
+@@ -411,6 +414,7 @@
+   document.addEventListener(
+     "submit",
+     function (event) {
++      if (event.target && event.target.closest && event.target.closest('[data-pz-event-owner="stage7"]')) return;
+       enrichForm(event.target);
+       dataLayerPush({
+         event: "pz_form_submit",
+@@ -423,6 +427,7 @@
+   );
+ 
+   document.addEventListener("tildaform:aftersuccess", function (event) {
++    if (event.target && event.target.closest && event.target.closest('[data-pz-event-owner="stage7"]')) return;
+     var form = event.target;
+     if (!form || typeof form.querySelector !== "function") return;
+     dataLayerPush({

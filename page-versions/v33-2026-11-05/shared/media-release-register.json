@@ -1,0 +1,72 @@
+[
+  {
+    "page_path": "/antiterror/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/remont/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/smena-podryadchika/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/ispytaniya-lestnic/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/ognezashita/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/obuchenie/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/pozharotushenie/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/zsi/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/modernizaciya/",
+    "status": "approved_source_montazh_youtube_exception",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  },
+  {
+    "page_path": "/soue/",
+    "status": "HOLD_ASSETS",
+    "required_photos": 3,
+    "required_videos": 3,
+    "owner_action": "Разрешённые материалы именно этой услуги; не заменять чужими кейсами."
+  }
+]

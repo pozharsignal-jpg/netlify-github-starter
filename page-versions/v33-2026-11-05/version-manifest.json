@@ -1,0 +1,288 @@
+{
+  "version": "v33",
+  "date": "2026-11-05",
+  "repository": "pozharsignal-jpg/netlify-github-starter",
+  "branch": "archive/stage7-v33-20261105",
+  "root": "page-versions/v33-2026-11-05/",
+  "status": "frontend archive; not published to Tilda",
+  "form_fields": "name, phone; comment optional; personal-data consent",
+  "pages": [
+    "antiterror",
+    "ispytaniya-lestnic",
+    "modernizaciya",
+    "obuchenie",
+    "ognezashita",
+    "pozharotushenie",
+    "remont",
+    "smena-podryadchika",
+    "soue",
+    "zsi"
+  ],
+  "files": [
+    {
+      "path": "page-versions/v33-2026-11-05/antiterror/01_HEAD_SEO.html",
+      "sha256": "89caa222fcaacb5fff4c97463a0092d914dc981ce5e0bce9103b78c818bbb785",
+      "bytes": 4881
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/antiterror/02_PAGE_FULL_T123.html",
+      "sha256": "128da32673ef6f2cdeff4ee443b0e1edb716917557860872abb27b036d14aa39",
+      "bytes": 68238
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/antiterror/test-preview.html",
+      "sha256": "36f9df663e460198db759b497597626707d27b42877920d48be48f5650ba0389",
+      "bytes": 95574
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/ispytaniya-lestnic/01_HEAD_SEO.html",
+      "sha256": "80c9555cdbb5d6b5e4ed449891896c2e9f7e3ea61d74ea0fa6554ce064765e8a",
+      "bytes": 4879
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/ispytaniya-lestnic/02_PAGE_FULL_T123.html",
+      "sha256": "148b78e8d40d7a668b335830524ea8ffd5457200c98b9d282a7b927d3fba3629",
+      "bytes": 61115
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/ispytaniya-lestnic/test-preview.html",
+      "sha256": "4e9e1a287e9561df3f944660fc59f921ce3fb027466f9638e89f6fc1bc76510f",
+      "bytes": 88449
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/modernizaciya/01_HEAD_SEO.html",
+      "sha256": "62eb14d16663e9a42926e0bcecf921a643a7005fd23ae08b3b8f5d04ea896ead",
+      "bytes": 4837
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/modernizaciya/02_PAGE_FULL_T123.html",
+      "sha256": "dcf15558b409223ff9cbab31aa334f6d14c2e75df2c65172c7e1b2bbd2fddd9c",
+      "bytes": 77580
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/modernizaciya/test-preview.html",
+      "sha256": "4a7731ebaeb304b254e7c44e324bf5ec861778d9cc4110f97e14989b1596ecd8",
+      "bytes": 694372
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/obuchenie/01_HEAD_SEO.html",
+      "sha256": "b3bcf7534f9d68b22c7101c18596ae0ad5e7e150c1f442a8f4854167537f796d",
+      "bytes": 4873
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/obuchenie/02_PAGE_FULL_T123.html",
+      "sha256": "1ed15c3f76dfaf896064c33030eba3145538343100754da830187e8b13b72d1b",
+      "bytes": 64234
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/obuchenie/test-preview.html",
+      "sha256": "c5dec3efd1c15b3707d49b3729ac08c24437b4c7519671a41ee6da9cd872866d",
+      "bytes": 91562
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/ognezashita/01_HEAD_SEO.html",
+      "sha256": "4952a49de974cf31dca5e29293974b80973bbcd922431cbf01b79d499a0d9036",
+      "bytes": 4847
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/ognezashita/02_PAGE_FULL_T123.html",
+      "sha256": "4e0193356a8c6eacf57a47a0e1b93bfb0960222275714ea6feb2a898d027cc36",
+      "bytes": 63209
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/ognezashita/test-preview.html",
+      "sha256": "78ed71d88402eeec41b87c6b88a2343cb117af3eae7abc80113eef9d0cfca9b0",
+      "bytes": 90511
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/pozharotushenie/01_HEAD_SEO.html",
+      "sha256": "d8fa90cc57edab31693b6dd909506d734ebceb9ed8a1a148f77c6ea31fe42c60",
+      "bytes": 4883
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/pozharotushenie/02_PAGE_FULL_T123.html",
+      "sha256": "d79bfe31b6a3e8ab8d48295d82c81a5701cffdac28e1189c2b7d5a41338dcf68",
+      "bytes": 63277
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/pozharotushenie/test-preview.html",
+      "sha256": "409d2a47490bd40639d769d630937352aebad68c7ac8e046beae1cc234f70257",
+      "bytes": 90615
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/remont/01_HEAD_SEO.html",
+      "sha256": "d28cda42009cb9d1baaba05f635f3c03a939a361deb7ca0298db2f8e80628ea2",
+      "bytes": 4787
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/remont/02_PAGE_FULL_T123.html",
+      "sha256": "e87e4fde4f3281df955097b6b979ba3590ef587c654b16535e6b00f014bcbac2",
+      "bytes": 61005
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/remont/test-preview.html",
+      "sha256": "f94d099d32fc605db6172f570463ece03afa108e72736edd559a4b71ba08f492",
+      "bytes": 88247
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/smena-podryadchika/01_HEAD_SEO.html",
+      "sha256": "dbeae565a85f937bc0e9ac84a6c962b001220f23dda906a65dec4c3750d07ab5",
+      "bytes": 4885
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/smena-podryadchika/02_PAGE_FULL_T123.html",
+      "sha256": "5e2762c490d4d3325e323d3cbfb213ac13bede92e1c0da4be0984f385e359ef8",
+      "bytes": 64442
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/smena-podryadchika/test-preview.html",
+      "sha256": "fc65e300393d3582e81fa27fc57a1e8b6d4130d0f1140ecfbb045a6bae733059",
+      "bytes": 91782
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/soue/01_HEAD_SEO.html",
+      "sha256": "f50b9e7ed7f8638717b19e7e0ba78a0d4ea7325e62337ca1dcde804db679b79b",
+      "bytes": 4811
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/soue/02_PAGE_FULL_T123.html",
+      "sha256": "5acdbef58fee8505edf042c4c1d6d9f15c397c0cf30807495a56295025fb3517",
+      "bytes": 59491
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/soue/test-preview.html",
+      "sha256": "cb68852572b04fbdad9aa78b6ad43c5a0a1f7553b65999d3d3226f61ab49f349",
+      "bytes": 86757
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/zsi/01_HEAD_SEO.html",
+      "sha256": "e3bf051f095e4fff905896bb94156bddbd6cbbefa96b69f0e9465c93af87efc7",
+      "bytes": 4833
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/zsi/02_PAGE_FULL_T123.html",
+      "sha256": "7ecaf11e72f12a831fbba89bed4d80ab866e01c6822b9bfbecd2e1772f2050ac",
+      "bytes": 60865
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/zsi/test-preview.html",
+      "sha256": "b261911df244f54f72209016e63745b2ebfb500534186ab197473fad97a98f03",
+      "bytes": 88153
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/media-release-register.json",
+      "sha256": "b328989ab9f509c8da85b6d68b70358b60301f3f3a781fe7b59b3b38ea387155",
+      "bytes": 2779
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/qualifiers-stage7.json",
+      "sha256": "af530d378f16729e84a90ffce51b0dc14d2ac4da1e484879b601a95190bcb247",
+      "bytes": 19293
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/service-need-normative-map.json",
+      "sha256": "673dfa2f03ba7cd4b0c82e832bd0c45d9b8e8f5c1c937284a032d4ba0158f746",
+      "bytes": 30845
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/apple-touch-icon.png",
+      "sha256": "7edd6111d46a7cc4a0bfb46faab00a8d2f8c702fbeb8771cd6c2bcc556c2ba63",
+      "bytes": 2158
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/PZ_STAGE7_GLOBAL.js",
+      "sha256": "b7ee8f97a5a0e8e4cd0bb8ecd71e197b60c3346cec881940edcdca42afb29ce2",
+      "bytes": 22245
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/pricing-scenarios-stage7.json",
+      "sha256": "4754529d8e54ae701dfa7219156f154ba8472bcd8283ed86cc89cf8000dcea57",
+      "bytes": 18991
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/service-scope-stage7.json",
+      "sha256": "0b55d3c3729dc5df2be1b1e276c8a83a16aa9ab2c2e30243aca4d58b472b6316",
+      "bytes": 24680
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/faq-stage7.json",
+      "sha256": "de13abd1f6bcd3ff0ce387a4a34b0e3ff249719bb89049e7ada1d3bddd94d46d",
+      "bytes": 69026
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/legacy-analytics-stage7-exclusion.patch",
+      "sha256": "a62a1ef15772e07e5b820904a6bc7d8eb205521c4ad5e7db2c5f80b5c609493e",
+      "bytes": 1636
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/content_requirements.json",
+      "sha256": "183cc3b63f4b9f722827c2dd578373abbc92c3a10019bf99210f677a7f528156",
+      "bytes": 9990
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/client-inputs-stage7.json",
+      "sha256": "1623bde32810d33a434f00338bdbaab12e1c9a1485902ee9ff041a1f0e37942a",
+      "bytes": 36515
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/service-catalog-stage7.json",
+      "sha256": "9101cd263bf760b9d6bf386c95420ee692113624034d6d8217bcec79ac530c9c",
+      "bytes": 4344
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/normative-documents-stage7.json",
+      "sha256": "4a29da51766d365d53bedd9e7cd7cfa7bdcf5b1c0db6e5dd30dbecba80e551fc",
+      "bytes": 9445
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/shared/media-assets-stage7.json",
+      "sha256": "06eeae42e8ed21e6bd14e4e68b495fe674a7a8d29c02a4f512b46aed205f035c",
+      "bytes": 674
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/assets/stage7/modernization-4.webp",
+      "sha256": "ba484a8aa3080ebf2a41fcc448b2e3aa9264473962451238d05ff58f3f75b63b",
+      "bytes": 23040
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/assets/stage7/modernization-2.webp",
+      "sha256": "697133334f4f2790bb08d30cd31404518c0860a7d85a5ce5151dac929421809d",
+      "bytes": 54484
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/assets/stage7/modernization-6.webp",
+      "sha256": "e8c78bac66685b64d642dc60c1b98c5c182114d478c2163469607a8f4724fe33",
+      "bytes": 21288
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/assets/stage7/modernization-1.webp",
+      "sha256": "4414c94245c0c7e4da937b2af68e43fc27bff52c926549726107ccb76b17adff",
+      "bytes": 86264
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/assets/stage7/modernization-5.webp",
+      "sha256": "0a442bbd33f0cae8b092babf1d9c799019cdd976861e58eefeb469786c8e2e63",
+      "bytes": 13282
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/assets/stage7/modernization-3.webp",
+      "sha256": "c4ee92a2ae7b1afd10a6b67273b11eda1e6ff314d7d1c0031705eda211fef3b1",
+      "bytes": 51544
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/CHANGELOG_v33.txt",
+      "sha256": "0d90c1c35e5f78c3e3dc1067fdbccb46a2a78eebd6b8da52bf8747dbdd5530a7",
+      "bytes": 488
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/AUDIT_FIXES_v32.md",
+      "sha256": "e580126cedd9fbf0719cd60b7bc5441c2c40aa44f73a67b7b0ef5ef518b97612",
+      "bytes": 3401
+    },
+    {
+      "path": "page-versions/v33-2026-11-05/release-status.html",
+      "sha256": "17740c27ee13dc331a0cbea7c268fdefc86b6646071c2e2eff02164ba3fa6cce",
+      "bytes": 1698
+    }
+  ]
+}
